@@ -1,0 +1,14 @@
+# package directories
+node_modules
+jspm_packages
+
+# Serverless directories
+.serverless
+.webpack
+
+# Secrets files
+secrets.*.yml
+
+# Test files
+.nyc_output/
+test-results.xml
