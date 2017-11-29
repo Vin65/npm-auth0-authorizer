@@ -2,6 +2,9 @@
   "name": "npm-auth0-authorizer",
   "version": "1.0.0",
   "description": "Auth0 JWT Authorizer for serverless framework and nodejs projects",
+  "scripts": {
+    "test": "mocha --timeout 5000 --recursive --require babel-register --require dotenv/config --colors"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Vin65/npm-auth0-authorizer"
@@ -11,5 +14,20 @@
   "bugs": {
     "url": "https://github.com/Vin65/npm-auth0-authorizer/issues"
   },
-  "homepage": "https://github.com/Vin65/npm-auth0-authorizer#readme"
+  "homepage": "https://github.com/Vin65/npm-auth0-authorizer#readme",
+  "dependencies": {
+    "jwks-rsa": "1.2.1",
+    "jsonwebtoken": "8.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.0",
+    "babel-preset-env": "1.6.1",
+    "babel-polyfill": "6.26.0",
+    "chai": "3.5.0",
+    "mocha": "3.5.3",
+    "request": "2.83.0",
+    "request-promise": "4.2.1",
+    "dotenv": "4.0.0"
+  }
 }
