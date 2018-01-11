@@ -1,6 +1,6 @@
 {
   "name": "npm-auth0-authorizer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Auth0 JWT Authorizer for serverless framework and nodejs projects",
   "scripts": {
     "test": "mocha --timeout 5000 --recursive --require babel-register --require dotenv/config --colors"
