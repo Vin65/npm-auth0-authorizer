@@ -21,7 +21,7 @@ const auth0Authorizer = (event) => {
         const signingKey = key.publicKey || key.rsaPublicKey;
         const token = event.authorizationToken.substring(7);
   
-        jwt.verify(token, signingKey, { algorithms: [process.env.AUTH0_ALGORITHM], audience: process.env.AUTH0_AUDIENCE }, (err, payload) => {
+        jwt.verify(token, signingKey, { algorithms: [process.env.AUTH0_ALGORITHM] }, (err, payload) => {
           if(err) return reject(err);
           let principalId = payload ? payload.sub : 'invalidJWT';
           const policy = new AuthPolicy(principalId, policyResources.awsAccountId, policyResources.apiOptions);
