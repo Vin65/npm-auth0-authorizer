@@ -1,5 +1,5 @@
 # Installation
-1. `npm install --save git+ssh://git@github.com/Vin65/npm-auth0-authorizer.git#master`
+1. `npm install --save npm-auth0-authorizer`
 
 2. Ensure the following environment variables are defined within your project:
 - AUTH0_DOMAIN (example: https://yourwebsite.auth0.com/)
